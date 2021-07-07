@@ -1,0 +1,29 @@
+<md-dialog>
+  <form ng-cloak>
+    <md-toolbar>
+      <div class="md-toolbar-tools">
+        <h2>Többszörös teremkiosztás ellenőrzése</h2>
+        <span flex></span>
+        <md-button class="md-icon-button" ng-click="cancel()">
+          <md-icon md-svg-src="/img/ic_close_24px.svg" aria-label="Close dialog"></md-icon>
+        </md-button>
+      </div>
+    </md-toolbar>
+
+    <md-dialog-content>
+      <div class="md-dialog-content">
+          <ul>
+              <li ng-repeat="temp in roomList">
+                  [[ $index ]]. óra: <span ng-show="temp.length < 1">-</span> <span ng-repeat="p in temp"><span ng-show="$index > 0">, </span>[[ p.nev ]] ([[ p.num ]] db)</span>
+              </li>
+          </ul>
+      </div>
+    </md-dialog-content>
+
+    <md-dialog-actions layout="row">
+      <span flex></span>
+      <md-button ng-click="cancel()">Bezár</md-button>
+    </md-dialog-actions>
+  </form>
+</md-dialog>
+

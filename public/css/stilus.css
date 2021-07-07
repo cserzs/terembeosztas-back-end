@@ -1,0 +1,59 @@
+.cursor {
+    cursor: pointer;
+}
+
+a[ng-click]{
+    cursor: pointer;
+}
+
+.daydropdown {
+    width: 200px;
+}
+
+th.fixwidth {
+    width: 300px;
+}
+
+md-dialog {
+    min-width: 400px;
+}
+
+.topGap {
+    padding-top: 1.5em;
+}
+
+.loadingScreen{
+   position: absolute;
+   left: 0;
+   right: 0;
+   top: 0;
+   bottom: 0;
+   background-color: white;
+   text-align: center;
+}
+
+.loadingScreen > div{
+  position: absolute;
+  top: 47%;
+  left: 47%;
+}
+
+.fixed_first_col_div {
+    margin-left:5em;
+    width: 95%;
+}
+.fixed_col_table {
+    /*margin-left: 5em;*/
+}
+.headcol {
+    position:absolute; 
+    width: 5em;
+    left:0;
+    top:auto;
+    border-right: 0px none black; 
+    border-top-width:3px; /*only relevant for first row*/
+    margin-top:-3px; /*compensate for top border*/
+}
+.classcolumn {
+    min-width: 250px;
+}

@@ -1,0 +1,11 @@
+.enterdiv {
+    padding-top: 1.4em;
+}
+
+div.row > div.hatarolo {
+    border-right: 1px #000 solid;
+}
+
+div.row > div.hatarolo:last-child {
+    border-right: 0px #000 solid;
+}

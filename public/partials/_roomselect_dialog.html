@@ -1,0 +1,28 @@
+<md-dialog>
+  <form ng-cloak>
+    <md-toolbar>
+      <div class="md-toolbar-tools">
+        <h2>[[ title ]]</h2>
+        <span flex></span>
+        <md-button class="md-icon-button" ng-click="cancel()">
+          <md-icon md-svg-src="/img/ic_close_24px.svg" aria-label="Close dialog"></md-icon>
+        </md-button>
+      </div>
+    </md-toolbar>
+
+    <md-dialog-content>
+      <div class="md-dialog-content">
+        <div>
+            <md-button ng-repeat="room in roomList" ng-class="room.used>0 ? '' : 'md-raised md-primary'" md-no-ink ng-click="answer(room.id)" ng-mouseover="showDesc(room.id)" ng-mouseleave="showDesc(-1)">[[ room.name ]]</md-button>
+        </div>
+          <div ng-bind-html="roomDescription" class="text-center text-primary font-weight-bold"></div>
+      </div>
+    </md-dialog-content>
+
+    <md-dialog-actions layout="row">
+      <span flex></span>
+      <md-button ng-click="cancel()">Bezár</md-button>
+    </md-dialog-actions>
+  </form>
+</md-dialog>
+

@@ -1,0 +1,28 @@
+
+#content, #page {
+    width: 100%; 
+    margin: 0; 
+    float: none;
+}
+
+@page { margin: 2cm }
+
+body {
+    font: 13pt Georgia, "Times New Roman", Times, serif;
+    line-height: 1.3;
+    background: #fff !important;
+    color: #000;
+}
+
+table {
+    border:solid #000 !important;
+    border-width:1px 0 0 1px !important;
+    page-break-inside: auto;
+}
+tr    { page-break-inside: auto; }
+th, td {
+    border:solid #000 !important;
+    border-width:0 1px 1px 0 !important;
+    text-align: center;
+    min-width: 5cm;
+}
