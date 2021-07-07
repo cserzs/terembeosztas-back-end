@@ -1,9 +1,0 @@
-
-- mysql felhasznalonev es jelszo
-- base url
-- utvonalak (app, system...)
-
-- adatbazis
-
-- alap adatok
-
