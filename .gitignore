@@ -1,5 +1,7 @@
 app/Config/Boot/production.php
 app/Config/Development
+\#setup
+system
 
 #-------------------------
 # Operating Specific Junk Files
